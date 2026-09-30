@@ -27,7 +27,11 @@ $$x_{i+1} = x_i + v_{x, i} \Delta t$$
 $$y_{i+1} = y_i + v_{y, i} \Delta t$$
 
 ## Results
-...
+The Python simulation (`python/simulation.py`) generates a trajectory plot comparing the exact analytical path with the numerical Euler approximation.
+
+![Trajectory Comparison](./results/trajectory.png)
+
+**Data Output:** The numerical simulation exports the calculated trajectory coordinates to a CSV file located in `data/euler_trajectory.csv` for further external analysis.
 
 ## Error Analysis
 The numerical solution is compared against the analytical solution for different time steps ($\Delta t$). The Forward Euler method is a first-order numerical procedure, meaning its global truncation error is proportional to the step size, $\mathcal{O}(\Delta t)$. 
